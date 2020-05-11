@@ -1,0 +1,14 @@
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\bin\Release\ColourPick.exe.config
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\bin\Release\ColourPick.exe
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\bin\Release\ColourPick.pdb
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\MainWindow.g.cs
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\App.g.cs
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\ColourPick_MarkupCompile.cache
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\ColourPick_MarkupCompile.lref
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\MainWindow.baml
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\ColourPick.g.resources
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\ColourPick.Properties.Resources.resources
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\ColourPick.csproj.GenerateResource.cache
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\ColourPick.csproj.CoreCompileInputs.cache
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\ColourPick.exe
+C:\Users\joshv\Desktop\Github\ColourPick\ColourPick\ColourPick\obj\Release\ColourPick.pdb

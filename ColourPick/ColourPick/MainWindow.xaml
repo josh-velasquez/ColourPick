@@ -1,0 +1,45 @@
+﻿<Window x:Class="ColourPick.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ColourPick"
+        mc:Ignorable="d"
+        Title="ColourPick" Height="495" Width="501.5">
+    <Grid Background="#FF353A40">
+        <ListBox x:Name="hexListBox" HorizontalAlignment="Left" Height="183" VerticalAlignment="Top" Width="217" Margin="10,41,0,0" Background="#FFA6B6FF" />
+        <Label Content="Hex:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White" />
+        <Label Content="RGB:" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" Foreground="White" />
+        <ListBox x:Name="rgbListBox" HorizontalAlignment="Left" Height="183" VerticalAlignment="Top" Width="217" Margin="10,260,0,0" Background="#FFA6B6FF" />
+        <Label Content="Mouse Position:" HorizontalAlignment="Left" Margin="252,10,0,0" VerticalAlignment="Top" Foreground="White" />
+        <ListBox x:Name="positionListBox" HorizontalAlignment="Left" Height="183" VerticalAlignment="Top" Width="217" Margin="252,41,0,0" Background="#FFA6B6FF" />
+        <Button x:Name="clickButton" Content="On Click" HorizontalAlignment="Left" Margin="252,260,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="OnColourClick" Background="#FF5A8BD3" FontSize="14" Foreground="White" RenderTransformOrigin="1.225,0.55">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="4" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="hoverButton" Content="On Hover" HorizontalAlignment="Left" Margin="363,260,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="OnHoverClick" Background="#FF5A8BD3" FontSize="14" Foreground="White" RenderTransformOrigin="1.225,0.55">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="stopButton" Content="Stop" HorizontalAlignment="Left" Margin="252,290,0,0" VerticalAlignment="Top" Width="217" Height="25" Click="OnStopClick" Background="#FFE84949" FontSize="14" Foreground="White" RenderTransformOrigin="1.225,0.55">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="clearButton" Content="Clear" HorizontalAlignment="Left" Margin="252,320,0,0" VerticalAlignment="Top" Width="217" Height="25" Click="OnClearClick" Background="#FFE4A73D" FontSize="14" Foreground="White" RenderTransformOrigin="1.225,0.55">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4" />
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
