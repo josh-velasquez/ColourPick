@@ -41,5 +41,14 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <Rectangle x:Name="colourPanel" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="63" Margin="252,380,0,0" Stroke="Black" VerticalAlignment="Top" Width="217"/>
+        <TextBox x:Name="ShowColourTextBox" HorizontalAlignment="Left" Height="25" Margin="252,350,0,0" TextWrapping="Wrap" Text="#FFFF" VerticalAlignment="Top" Width="149" Background="#FFA6F3FF" VerticalContentAlignment="Center"/>
+        <Button x:Name="ShowColourButton" Content="Show" HorizontalAlignment="Left" Margin="406,350,0,0" VerticalAlignment="Top" Width="63" Height="25" Click="OnShowColour" Background="#FF5A8BD3" FontSize="14" Foreground="White" RenderTransformOrigin="1.225,0.55">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4" />
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

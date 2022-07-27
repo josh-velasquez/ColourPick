@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using System.Windows.Media;
 using Color = System.Drawing.Color;
 using Point = System.Drawing.Point;
 using Size = System.Drawing.Size;
@@ -59,6 +60,13 @@ namespace ColourPick.Util
             if (match.Any())
                 return match.First().Name;
             return String.Empty;
+        }
+
+        public static System.Windows.Media.Brush ConvertHexToBrush(string hexValue)
+        {
+            var converter = new BrushConverter();
+            var brush = (System.Windows.Media.Brush)converter.ConvertFromString(hexValue);
+            return brush;
         }
 
         /// <summary>

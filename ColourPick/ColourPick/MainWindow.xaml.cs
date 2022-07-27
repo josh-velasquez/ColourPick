@@ -40,6 +40,7 @@ namespace ColourPick
             rgbListBox.Items.Insert(0, colour.GetRGB());
             hexListBox.Items.Insert(0, colour.GetHex());
             positionListBox.Items.Insert(0, colour.GetPos());
+            UpdateShowColour(colour.GetHex());
         }
 
         #region Custom item background
@@ -110,6 +111,8 @@ namespace ColourPick
             rgbListBox.Items.Clear();
             hexListBox.Items.Clear();
             positionListBox.Items.Clear();
+            ShowColourTextBox.Text = "#FFF";
+            UpdateShowColour("#FFF");
         }
 
         #region Mouse Handler
@@ -186,6 +189,17 @@ namespace ColourPick
 
         [DllImport("kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         private static extern IntPtr GetModuleHandle(string lpModuleName);
+
+        private void OnShowColour(object sender, RoutedEventArgs e)
+        {
+            var hexColour = ShowColourTextBox.Text;
+            UpdateShowColour(hexColour);
+        }
+
+        private void UpdateShowColour(string hexValue)
+        {
+            colourPanel.Fill = ColourUtilities.ConvertHexToBrush(hexValue);
+        }
     }
 
     #endregion Mouse Handler
